@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to XHG's first Web
 
 You can use the [editor on GitHub](https://github.com/Xhg-Web/TheWebFirst/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
