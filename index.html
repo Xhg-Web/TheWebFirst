@@ -4,6 +4,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 	<meta charset="utf-8" />
+	    <script type="text/javascript">
+
+        var nextYearBirDaySelect = function () {
+
+        var birMonth = window.prompt('请输入你的生日月份：');
+        var birDay = window.prompt('请输入你的生日日期：');
+        birMonth = Number(birMonth);
+        birDay = Number(birDay);
+
+        var data1 = new Date();
+        var theNextYear = data1.getFullYear() + 1;
+        data1.setFullYear(theNextYear);
+        data1.setMonth(birMonth-1);
+        data1.setDate(birDay);
+        var data2 = new Date();
+        var data3 = data1.getTime() - data2.getTime();
+        var days = Math.ceil(data3 / (24 * 60 * 60 * 1000));
+            alert("今天距离你明年生日还有" + days + "天");
+
+        }
+    </script>
+
 </head>
 <body>
     <header>
@@ -16,6 +38,7 @@
 
 
     <footer>
+            <input type="button" onclick="nextYearBirDaySelect();" value="点击查询距离你明年生日还有几天"  width="200" height="150" style="color:red;"/>
 
     </footer>
 </body>
